@@ -1,11 +1,16 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
+	background-color: black;
 }
 .header {
-	height: 500px;
-	background: url('img/header_bg.jpg') no-repeat;
-	background-size: cover;
+	height: 150px;
+	background: url('img/scan/8.jpg') no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+.header img {
+	margin-bottom:300px;
 }
 .header a {
 	font-size: 24pt;
@@ -18,7 +23,7 @@ body {
 }
 .header p {
 	font-size: 42pt;
-	color: #fff;
+	color: red;
 	text-transform: lowercase;
 	position: absolute;
 	top: 50%;
@@ -26,11 +31,13 @@ body {
 	transform: translate(-50%,-50%);
 	margin: 0;
 	font-family: 'Lobster', cursive;
+	text-shadow: 2px 2px black;
+	
 }
 
 @media screen and (max-width:760px) {
 	.header {
-		height: 300px;
+		height: 100px;
 	}
 	.header a {
 		display: none;
@@ -47,63 +54,61 @@ body {
 
 .main-menu {
 	width: 100%;
-	background-color: #F1C40F;
+	background-color: lightgray;
+	text-align:center;
 }
 .main-menu li {
 	display: inline-block;
-	height: 100px;
-	transition: 3s;
-	
+	height: 50px;
+	transition: 1.5s;
+	text-align:center;
 }
 .main-menu li a {
 	color: #000;
 	font-size: 18pt;
 	padding-left: 40px;
 	padding-right: 40px;
-	line-height: 100px;
+	line-height: 50px;
 	display: block;
+	text-align:center;
 }
-
 .main-menu li:hover {
-	background-color: #EB5757;
+	background-color: black;
 }
 .main-menu li:hover a {
 	text-decoration: none;
 	color: #fff;
 }
 
-.hamburger {
-	display: none;
-	line-height: 100px;
-	background-color: #F1C40F;
-	padding-right: 50px;
-	text-align: right;
-}
-.hamburger .glyphicon{
-	font-size: 20pt;
-	cursor: pointer;
-}
 
 @media screen and (max-width:760px) {
 	.main-menu {
 		padding: 0;
-		display: none;
 	}
 	.main-menu li {
 		display: block;
 		text-align: center;
 		width: 100%;
 	}
-	.hamburger {
-		display: block;
-		height:100px;
-	}
 }
 
-@media screen and (min-width:761px){
-	.main-menu{
-		display: block!important;
-	}
+.naslov{
+	color: lightgray;
+}
+p{
+	color:lightgray;
+}
+.item {
+	height:
+}
+
+
+
+
+
+
+
+
 
 .gallery img {
 	width: 100%;	
@@ -120,7 +125,7 @@ body {
 	right: 0;
 	bottom: 0;
 	opacity: 0;
-	transition: 1s ease;
+	transition: 3s ease;
 }
 
 .image-container:hover .overlay {
@@ -181,15 +186,16 @@ body {
 
 
 .footer {
-	height: 400px;
-	background: url('img/footer_bg.jpg') no-repeat;
+	height: 150px;
+	background: url('img/digi/3.jpg') no-repeat;
 	background-size: cover;
 }
 .footer img {
-	margin: 100px 0 0 100px;
+	margin: 20px 0 0 20px;
+	width:250px;
 }	
 .footer ul {
-	margin-top: 100px;
+	margin-top: 20px;
 	float: right;
 }
 .footer ul li {
@@ -204,7 +210,13 @@ body {
 	text-decoration: none;
 }
 
-@media screen and (max-width:760px) { 
+@media screen and (max-width:800px) { 
+	
+	.footer{
+		height:500px;
+	}
+	
+	
 	.footer img {
 		width: 50%;
 		margin: 80px auto 0 auto;
@@ -218,8 +230,10 @@ body {
 	.footer ul li {
 		display: block;
 	}
+	.footer ul li a{
+		text-shadow:2px 2px black;
+	}
 }
-
 .section {
 	margin: 50px 0;
 }
@@ -253,6 +267,7 @@ body {
 .about-me div,
 .article div {
 	padding: 0;
+	padding-top: 20px;
 }
 .about-me-text,
 .article-text {
@@ -276,5 +291,5 @@ body {
 	text-decoration: none;
 }
 #vegas {
-	height: 500px;
+	height: 300px;
 }
